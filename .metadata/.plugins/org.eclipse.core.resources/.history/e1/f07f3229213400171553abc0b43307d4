@@ -1,0 +1,29 @@
+<html>
+<body>
+<br>
+<form method="post" action="mystore">
+<input type="hidden" name="z1" value=1>
+<input type="submit" value="addition">
+</form><br>
+<form method="post" action="mystor">
+<input type="hidden" name="z1" value=2>
+<input type="submit" value="subtration">
+</form><br>
+<form method="post" action="mystore">
+<input type="hidden" name="z1" value=3>
+<input type="submit" value="multiplication">
+</form><br>
+<form method="post" action="mystore">
+<input type="hidden" name="z1" value=4>
+<input type="submit" value="divison">
+</form><br>
+<form method="post" action="mystore">
+<input type="hidden" name="z1" value=5>
+<input type="submit" value="percentage">
+</form><br>
+<form method="post" action="mystore">
+<input type="submit" value="view the result">
+</form>
+</body>
+
+</html>

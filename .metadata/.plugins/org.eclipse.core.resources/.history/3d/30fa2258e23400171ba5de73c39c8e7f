@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>general info</title><head><base target="_self"></head>
+</head>
+<body background="w_hd4.jpg"><center>
+<H1>PSA tutorials point--<right> 
+	<form action="search" method="get">
+	<input type="text" name="g1">
+	<input type="submit" value="google it">
+	
+	</form>
+	
+	</right></H1></center>
+
+</body>
+</html>

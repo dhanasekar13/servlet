@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Mystore</servlet-name>
+		<servlet-class>com.ds.MystoreServlet</servlet-class>
+		<init-param>
+		   <param-name>shop name</param-name> 
+		    <param-value>dhanasekar </param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Mystore</servlet-name>
+		<url-pattern>/*.html</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	//if you specify are not the welcome file list tag the servlet will first load 
+	//1.welcome file list 
+     //2.index.html
+     //3.index.htm
+     //4.index.jsp
+</web-app>

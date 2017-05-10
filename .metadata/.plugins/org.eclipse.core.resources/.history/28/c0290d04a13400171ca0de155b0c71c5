@@ -1,0 +1,35 @@
+<html>
+<head><base target="_self"></head>
+<body background="b.jpg" bgcolor="orangeS">
+<br>
+<br>
+
+<form action="mystore" method="post">
+<right><input type="text" name="z1">
+<input type="submit" name="search">
+</right>
+</form>
+<br>
+<br>
+<form action="mystore" method="get">
+<table>
+
+<tr>
+<td>Enter the first value</td>
+<td><input type="text" name="a1" ></td>
+</tr>
+
+<tr>
+<td>Enter the Second value</td>
+<td><input type="text" name="a2" ></td>
+</tr>
+
+<tr>
+<td>hit the submit button </td>
+<td><input type="submit" value="hit me" ></td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>

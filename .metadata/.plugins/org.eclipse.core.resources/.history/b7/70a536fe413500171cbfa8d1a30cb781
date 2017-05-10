@@ -1,0 +1,21 @@
+package com.ds;
+
+public class context1 {
+	 
+	public void doGet(HttpServletRequest req,HttpServletResponse res)  
+	{  PrintWriter out=res.getWriter(); 
+	try{  
+	  
+	res.setContentType("text/html");  
+	 
+	  
+	ServletContext context=getServletContext();  
+	String n=(String)context.getAttribute("company");  
+	  
+	out.println("Welcome to "+n);  
+	out.close();  
+	  
+	}catch(Exception e){out.println(e);}  
+	  
+	}
+}

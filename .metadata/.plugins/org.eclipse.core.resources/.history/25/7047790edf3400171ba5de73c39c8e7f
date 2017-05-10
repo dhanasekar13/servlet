@@ -1,0 +1,38 @@
+<html>
+<head>
+<base target="_self">
+<style type="text/css">
+h1 {font-color: #FFFFFF;
+
+}
+
+</style>
+</head>
+<body background="b.jpg" bgcolor="orangeS">
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<form action="mystore" method="get">
+		<table>
+
+			<tr>
+				<td><h1>Enter the first value</h1></td>
+				<td><input type="text" name="a1"></td>
+			</tr>
+
+			<tr>
+				<td><h1>Enter the Second value</h1></td>
+				<td><input type="text" name="a2"></td>
+			</tr>
+
+			<tr>
+				<td>hit the submit button</td>
+				<td><input type="submit" value="hit me"></td>
+			</tr>
+		</table>
+	</form>
+</h1>
+</body>
+</html>

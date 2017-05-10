@@ -1,0 +1,29 @@
+<html>
+<body>
+<form method="get" action="mystor">
+<input type="hidden" value=1>
+<input type="submit" value="addition">
+</form><br>
+<form method="get" action="mystor">
+<input type="hidden" value=2>
+<input type="submit" value="subtration">
+</form><br>
+<form method="get" action="mystor">
+<input type="hidden" value=3>
+<input type="submit" value="multiplivation">
+</form>
+<form method="get" action="mystor">
+<input type="hidden" value=4>
+<input type="submit" value="divison">
+</form>
+<form method="get" action="mystor">
+<input type="hidden" value=5>
+<input type="submit" value="percentage">
+</form>
+<form method="get" action="mystor">
+<input type="hidden" value=1>
+<input type="submit" value="view the result">
+</form>
+</body>
+
+</html>

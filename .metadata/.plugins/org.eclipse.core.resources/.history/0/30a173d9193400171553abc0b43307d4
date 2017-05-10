@@ -1,0 +1,15 @@
+<html>
+<body>
+<br>
+<br>
+<center>Enter the first value
+<form><br>
+<input type="text" name="a1" ><br>
+Enter the Second value
+<input type="text" name="a2" ><br>
+hit  the  submit button to post the value
+<input type="submit" name="hit me" >
+</form></center>
+
+</body>
+</html>
