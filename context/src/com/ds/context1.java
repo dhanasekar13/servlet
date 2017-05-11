@@ -3,7 +3,6 @@ package com.ds;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -15,8 +14,8 @@ public class context1 {
 	  
 	res.setContentType("text/html");  
 	 
-	ServletContext c1=getServletContext();  
-	String n=(String)c1.getAttribute("store name");  
+	
+	String n=(String)context.getAttribute("store name");  
 	  
 	out.println("Welcome to "+n);  
 	out.close();  
@@ -25,9 +24,5 @@ public class context1 {
 	  
 	}
 
-	private ServletContext getServletContext() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }

@@ -1,0 +1,12 @@
+<html>
+<body>
+<form>
+<table>
+<tr>
+<td><input type="text" name="a1" required="name is required"  ></td>
+</tr>
+</table>
+
+</form>
+</body>
+</html>

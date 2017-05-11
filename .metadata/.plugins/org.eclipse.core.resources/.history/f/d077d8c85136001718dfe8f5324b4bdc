@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<body>
+	<form method="post" action="shoopingjs">
+		<input type="hidden" name="s1" value="1"> <input type="submit"
+			value="create">
+	</form>
+
+	<form method="post" action="shoopingjs">
+		<input type="hidden" name="s1" value="99"> <input
+			type="submit" value="update">
+	</form>
+
+
+	<form method="post" action="shoopingjs">
+		<input type="hidden" name="s1" value="2"> <input type="submit"
+			value="delete">
+	</form>
+	<form method="post" action="shoopingjs">
+		<input type="hidden" name="s1" value="3"> <input type="submit"
+			value="read">
+	</form>
+	
+	<iframe name="iframe1" width="100%" src="secondf1.html" height="300px "> </iframe>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script>
+</script>
+</head>
+<body>
+<form action="shoopingjs" method="get" onsubmit="script1()">
+<label>Name</label>
+<input id="a1" name="b1" type="text">
+<label>Address</label>
+<input id="a2" name="b2" type="text">
+<label>Order Details</label>
+<input id="a3" name="b3" type="text">
+<label>Current Status</label>
+
+<input id="a5" type="submit" value="create">
+
+</form>
+</body>
+</html>

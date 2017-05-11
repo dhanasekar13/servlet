@@ -1,0 +1,78 @@
+package com.ds;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.google.appengine.api.datastore.DatastoreService;
+import com.google.appengine.api.datastore.DatastoreServiceFactory;
+import com.google.appengine.api.datastore.Entity;
+import com.google.appengine.api.datastore.EntityNotFoundException;
+import com.google.appengine.api.datastore.Key;
+import com.google.appengine.api.datastore.KeyFactory;
+
+@SuppressWarnings("serial")
+public class ShoopingjsServlet extends HttpServlet {
+
+	String g1, g2, g3, g4;
+	DatastoreService data = DatastoreServiceFactory.getDatastoreService();
+
+	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+		resp.setContentType("text/html");
+		String s1 = req.getParameter("var1");
+		String s2 = req.getParameter("var2");
+		String s3 = req.getParameter("var3");
+		String s4 = req.getParameter("var4");
+		g1 = s1;
+		g2 = s2;
+		g3 = s3;
+		g4 = s4;
+
+		resp.sendRedirect("firstf1.html");
+	}
+
+	@SuppressWarnings("deprecation")
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+
+		Key k2 = KeyFactory.createKey("dhana", g1);
+		Entity e1 = new Entity("dhana", k2);
+		e1.setProperty("dhana", k2);
+		e1.setProperty("name", g1);
+		e1.setProperty("address", g2);
+		e1.setProperty("order status ", g3);
+		e1.setProperty("deliverey status", g4);
+		resp.setContentType("text/html");
+		String z = req.getParameter("s1");
+		PrintWriter o = resp.getWriter();
+		int result = Integer.parseInt(z);
+		if (result == 1) {
+		
+			//data.put(e1);
+			resp.sendRedirect("index.html");
+
+		}
+		if (result == 2) {
+			
+		//	data.put(e1);
+			resp.sendRedirect("index.html");
+
+		}
+		if (result == 3) {
+			data.delete(k2);
+			resp.sendRedirect("index.html");
+		}
+		if (result == 4) {
+			Key key=KeyFactory.createKey("dhana", g1);
+			try {
+				Entity u1=data.get(key);
+			} catch (EntityNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			resp.sendRedirect("http://localhost:8888/_ah/admin");
+		}
+	}
+}
